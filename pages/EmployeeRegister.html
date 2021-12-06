@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Register Page</title>
-    <link rel="stylesheet" href="../css/EmployeeRegister.css">
-</head>
-<body> 
-    <header class="header-content">
-        <div class="logo-content">
-            <img src="..\assests\363-3633692_payroll-payroll-system-logo-png.png" alt="logo">
-            
-            <div>
-                <span class="emp-text">employee</span></br>
-                <span class="emp-text emp-payroll">payroll</span>
-            </div>
-        </div>
-    </header>
-    <div class="form-content">
-        <form class="form" action="#" onreset="resetForm();" onsubmit="save(event);">
-            <div class="form-head">
-                employee payroll form
-            </div>
-            <div class="row-content">
-                <label class ="lable text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Your name.."required>
-                <error-output class="text-error" for="text"></error-output>
-            </div>
-            <div class="row-content">
-                <label class="lable text" for="profile image">Profile image</label>
-               <div class="profile-radio-content">
-                    <label> <input type="radio"  id="profile1" name="profile" value="..\assests\female1.jpg "required>
-                    <img class="profile" id='image1' src="..\assests\female1.png" alt="profile"></lable>  
-                    <label> <input type="radio"  id="profile2" name="profile" value="..\assests\female2.jpg "required>
-                    <img class="profile" id='image2' src="..\assests\female2.jpg"
-                    <label> <input type="radio"  id="profile3" name="profile" value="..\assests\male1.jpg "required>
-                    <img class="profile" id='image3' src="..\assests\male1.png"
-                    <label> <input type="radio"  id="profile4" name="profile" value="..\assests\male2.jpg "required>
-                    <img class="profile" id='image4' src="..\assests\male2.png"       
-                </div>
-        </form>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Register Page</title>
+        <link rel="stylesheet" href="../css/EmployeeRegister.css">
     
-</body>
+   </head>
+   <body> 
+       <header class="header-content">
+            <div class="logo-content">
+                 <img src="..\assests\363-3633692_payroll-payroll-system-logo-png.png" alt="logo">
+            
+                <div>
+                     <span class="emp-text">employee</span></br>
+                     <span class="emp-text emp-payroll">payroll</span>
+                </div>
+            </div>
+        </header>
+        <div class="form-content">
+            <form class="form" action="#" onreset="resetForm();" onsubmit="save(event);">
+                <div class="form-head">
+                    employee payroll form
+                </div>
+                <div class="row-content">
+                    <label class ="lable text" for="name">Name</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Your name.."required>
+                    <error-output class="text-error" for="text"></error-output>
+                </div>
+                <div class="row-content">
+                    <label class="lable text" for="profile image">Profile Image</label>
+                   <div class="profile-radio-content">
+                        <label> <input type="radio"  id="profile1" name="profile" value="..\assests\female1.jpg "required>
+                        <img class="profile" id='image1' src="..\assests\female1.png" alt="profile"></lable>  
+                        <label> <input type="radio"  id="profile2" name="profile" value="..\assests\female2.jpg "required>
+                        <img class="profile" id='image2' src="..\assests\female2.jpg">
+                        <label> <input type="radio"  id="profile3" name="profile" value="..\assests\male1.jpg "required>
+                        <img class="profile" id='image3' src="..\assests\male1.png">
+                        <label> <input type="radio"  id="profile4" name="profile" value="..\assests\male2.png "required>
+                        <img class="profile" id='image4' src="..\assests\male2.png">       
+                    </div>              
+                </div>
+                <div class="row-content">
+                    <lable class="lable text" for="gender">Gender</lable>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <lable class="text" for="male">Male</lable>
+                        <input type="radio" id="female" name="gender" value="male">
+                        <lable class="text" for="female">Female</lable>
+                    </div>   
+                </div>   
+                <div class="row-content">
+                    <lable class="lable text" for="department">Department</lable>
+                    <div>
+                        <input type="checkbox" id="hr" name="department" value="HR">
+                        <lable class="text" for="hr">HR</lable>
+                        <input type="checkbox" type="checkbox" id="checkbox" name="department" value="Sales">
+                        <lable class="text" for="sales">Sales</lable>
+                        <input type="checkbox" type="checkbox" id="finance" name="department" value="Finance">
+                        <lable class="text" for="finance">Finance</lable>
+                        <input type="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">
+                        <lable class="text" for="engineer">Engineer</lable>
+                        <input type="checkbox" type="checkbox" id="others" name="department" value="Others">
+                        <lable class="text" for="others">Others</lable>
+                    </div>
+                </div>
+                <div class="row-content">
+                    <lable class="lable text" for="salary">Choose your salary:</lable>
+                    <input class="input" type="range" name="salary" id="salary" min="30000" max="500000" step="100" value="40000">
+                    <output class="salary-output text" for="salary">40000</output>
+                </div>    
+            </form>    
+        </div>    
+
+
+        
+        
+    
+
+   
+
+    </body>
 </html>
